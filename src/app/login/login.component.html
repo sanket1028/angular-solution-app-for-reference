@@ -1,0 +1,17 @@
+<div id="view-container">
+  <h1>Login View</h1>
+  <div id="input-container">
+    <p id="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+    <div class="input">
+      <label for="username">Username</label>
+      <input type="text" id="username" [(ngModel)]="username" />
+    </div>
+
+    <div class="input">
+      <label for="password">Password</label>
+      <input type="text" id="password" [(ngModel)]="password" />
+    </div>
+
+    <button type="button" (click)="onClick()">Login</button>
+  </div>
+</div>

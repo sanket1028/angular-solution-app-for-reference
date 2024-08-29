@@ -1,0 +1,26 @@
+<div id="view">
+  <h1>Admin View</h1>
+  <div id="section">
+    <div>
+      <img src="/assets/banner-admin.jpeg" alt="banner" />
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Flavour</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let icecream of icecreams" [id]="'flavour-' + icecream.id">
+          <td>{{ icecream.flavour }}</td>
+          <td>{{ icecream.quantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div>
+    <button type="button" id="logout" (click)="onClick()">Logout</button>
+  </div>
+</div>

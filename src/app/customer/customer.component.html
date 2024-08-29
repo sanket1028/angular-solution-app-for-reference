@@ -1,0 +1,13 @@
+<div id="view">
+  <h1>Cutsomer View</h1>
+  <div id="cards-container">
+    <div class="card" *ngFor="let icecream of icecreams">
+      <div>
+        <img [src]="icecream.image" [id]="'image' + icecream.id" />
+      </div>
+      <p [id]="'flavour' + icecream.id">{{ icecream.flavour }}</p>
+      <p [id]="'amount' + icecream.id">Rs. {{ icecream.amount }}</p>
+    </div>
+  </div>
+  <button id="logout" (click)="onClick()">Logout</button>
+</div>

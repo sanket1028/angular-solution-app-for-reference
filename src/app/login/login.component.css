@@ -1,0 +1,34 @@
+#view-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 90vh;
+    max-width: 100vw;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    row-gap: 5rem;
+    margin-top: 5rem;
+}
+
+#input-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    column-gap: 100rem;
+    /* padding: 2rem 5rem */
+}
+
+.input{
+    display: flex;
+    column-gap: 2rem;
+    align-items: baseline;
+}
+
+input{
+    padding: 4px 3px;
+}
+
+button{
+    padding: 7px 5px
+}
